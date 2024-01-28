@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Authorize Styling */
+.note{
+  @apply font-bold text-purple-400;
+}
+div p{
+  @apply text-[11px] sm:text-[21px] md:text-[31px] lg:text-[41px]   text-purple-500;
+}
+a{
+  @apply  text-[11px] sm:text-[21px] md:text-[31px] lg:text-[41px]  text-purple-500  hover:text-white;
+}
+
+input{
+  @apply rounded-lg bg-purple-700 p-1 text-sm text-purple-400;
+}
+
+
+/* Nav bar Styling */
+
+.navbar{
+  @apply h-[50px] w-full sm:h-[60px] md:h-[70px] lg:h-[80px] xl:h-[90px] ;
+}
+
+.logo{
+  @apply h-[30px] w-[30px] sm:h-[50px] sm:w-[50px] md:h-[60px] md:w-[60px] lg:h-[70px] lg:w-[70px] xl:h-[80px] xl:w-[80px];
+}
+.logo{
+  animation: logoHover 4s infinite;
+  transition: transform 0.5s ease;
+}
+.logo:hover {
+  animation:logo3d 2s infinite;
+}
+
+@keyframes logo3d{
+  0%{
+    transform: rotate3d(0,1,0,360deg);
+  } 
+  25%{
+    transform: rotate3d(0,1,0,720deg);
+  }       
+}
+
+@keyframes logoHover{
+  0%{
+    transform: rotate(0deg);
+  }
+  25%{
+    transform: rotate(20deg);
+  }
+  75%{
+    transform: rotate(-30deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}
+
+.title{
+  font-family: 'Chewy', cursive;
+}
+
+ /* Nav -> MobileNav */
+
+.mobileNav{
+  @apply flex flex-col items-center p-2 text-sm  hover:text-white;
+}
+
+/* Nav -> LapTopNav */
+
+.searchbar{
+  @apply h-[24px] md:h-[34px] lg:h-[44px];
+}
+.searchInput{
+  @apply text-sm h-[20px] md:h-[30px] lg:h-[40px];
+}
