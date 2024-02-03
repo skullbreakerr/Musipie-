@@ -1,3 +1,4 @@
+"use client";
 import  Authorize  from "../components/Authorize";
 import {useState} from 'react';
 import Link from 'next/link';

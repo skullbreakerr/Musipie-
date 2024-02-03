@@ -10,10 +10,10 @@
   @apply font-bold text-purple-400;
 }
 div p{
-  @apply text-[11px] sm:text-[21px] md:text-[31px] lg:text-[41px]   text-purple-500;
+  @apply text-[11px]  text-purple-500;
 }
 a{
-  @apply  text-[11px] sm:text-[21px] md:text-[31px] lg:text-[41px]  text-purple-500  hover:text-white;
+  @apply  text-[11px] text-purple-500  hover:text-white;
 }
 
 input{
